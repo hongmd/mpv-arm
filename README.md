@@ -2,12 +2,12 @@
 
 Hướng dẫn build mpv cho Mac Silicon từ source mpv-player/mpv có hỗ trợ vulkan.
 
-### Preparation
+## Preparation
 
 - [**Apple Xcode**](https://developer.apple.com/xcode/)
 - [**Homebrew**](https://brew.sh/)
 
-### Build and install
+## Build and install
 
 1. Clone source từ repo của [**mpv**](https://github.com/mpv-player/mpv.git)
 
@@ -47,3 +47,5 @@ cd mpv
 # This will create mpv.tar.gz with mpv.app
 ./build-mpv_silicon.sh --bundle
 ```
+
+7. Copy **mpv.app** trong thư mục mpv/build/ vào Applications.
