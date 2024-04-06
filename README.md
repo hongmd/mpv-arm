@@ -12,7 +12,7 @@ Hướng dẫn build mpv cho Mac Silicon từ source mpv-player/mpv có hỗ tr�
 1. Clone source từ repo của [**mpv**](https://github.com/mpv-player/mpv.git)
 
 ```sh
-git clone https://github.com/mpv-player/mpv.git
+git clone https://github.com/mpv-player/mpv
 ```
 
 2. Cài đặt **Molten-vk**
@@ -49,3 +49,19 @@ cd mpv
 ```
 
 7. Copy **mpv.app** trong thư mục **./mpv/build/** vào **/Applications**.
+
+## Optional
+
+Cài streamlink và yt-dlp
+
+```sh
+brew install streamlink
+brew install yt-dlp
+```
+
+sau đó symlink về `/usr/local/bin`
+
+```sh
+ln -s /opt/homebrew/bin/streamlink /usr/local/bin/streamlink
+ln -s /opt/homebrew/bin/yt-dlp /usr/local/bin/yt-dlp
+```
