@@ -48,4 +48,4 @@ cd mpv
 ./build-mpv_silicon.sh --bundle
 ```
 
-7. Copy **mpv.app** trong thư mục mpv/build/ vào Applications.
+7. Copy **mpv.app** trong thư mục **./mpv/build/** vào **/Applications**.
