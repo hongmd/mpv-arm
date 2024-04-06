@@ -1,19 +1,21 @@
 # Mpv.app on an Apple silicon Mac
 
-Build mpv cho Mac Silicon từ source mpv-player/mpv có hỗ trợ vulkan
+Hướng dẫn build mpv cho Mac Silicon từ source mpv-player/mpv có hỗ trợ vulkan.
 
-### Chuẩn bị
+### Preparation
 
-- [Apple Xcode](https://developer.apple.com/xcode/)
-- [Homebrew](https://brew.sh/)
+- [**Apple Xcode**](https://developer.apple.com/xcode/)
+- [**Homebrew**](https://brew.sh/)
 
-1. Clone source từ repo của mpv
+### Build and install
+
+1. Clone source từ repo của [**mpv**](https://github.com/mpv-player/mpv.git)
 
 ```sh
 git clone https://github.com/mpv-player/mpv.git
 ```
 
-2. Cài đặt Molten-vk
+2. Cài đặt **Molten-vk**
 
 ```sh
 brew install molten-vk
@@ -25,4 +27,23 @@ brew install molten-vk
 brew install --build-from-source --only-dependencies mpv && brew install libplacebo
 ```
 
-4. Tải file 
+4. Tải file [**build-mpv_silicon.sh**](https://github.com/tranthanhxhong/mpv-arm/blob/main/build-mpv_silicon.sh) và đặt vào folder mpv đã clone trước đó
+
+- [**build-mpv_silicon.sh**](https://github.com/tranthanhxhong/mpv-arm/blob/main/build-mpv_silicon.sh)
+
+5. Cài đặt **dylibbundler**
+
+```sh
+brew install dylibbundler
+```
+
+6. Chạy file **build-mpv_silicon.sh**
+
+```sh
+cd mpv
+./build-mpv_silicon.sh --static
+
+# Alternatively, you can make an app bundle by adding '--bundle' option
+# This will create mpv.tar.gz with mpv.app
+./build-mpv_silicon.sh --bundle
+```
