@@ -62,6 +62,6 @@ brew install yt-dlp
 sau đó symlink về `/usr/local/bin`
 
 ```sh
-ln -s /opt/homebrew/bin/streamlink /usr/local/bin/streamlink
-ln -s /opt/homebrew/bin/yt-dlp /usr/local/bin/yt-dlp
+sudo ln -s /opt/homebrew/bin/streamlink /usr/local/bin/streamlink
+sudo ln -s /opt/homebrew/bin/yt-dlp /usr/local/bin/yt-dlp
 ```
