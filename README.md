@@ -15,6 +15,14 @@ Hướng dẫn build mpv cho Mac Silicon từ source mpv-player/mpv có hỗ tr�
 git clone https://github.com/mpv-player/mpv
 ```
 
+cập nhật git clone local bằng cách chạy lệnh sau từ thư mục gốc:
+
+```sh
+git reset --hard
+git clean --force -d -x
+git pull origin master
+```
+
 2. Cài đặt **Molten-vk**
 
 ```sh
@@ -64,12 +72,4 @@ sau đó symlink về `/usr/local/bin`
 ```sh
 sudo ln -s /opt/homebrew/bin/streamlink /usr/local/bin/streamlink
 sudo ln -s /opt/homebrew/bin/yt-dlp /usr/local/bin/yt-dlp
-```
-
-cập nhật git clone local bằng cách chạy lệnh sau từ thư mục gốc:
-
-```sh
-git reset --hard
-git clean --force -d -x
-git pull origin master
 ```
