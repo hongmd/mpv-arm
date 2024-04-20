@@ -9,7 +9,7 @@ Hướng dẫn build mpv cho Mac Silicon từ source mpv-player/mpv có hỗ tr�
 
 ## Build and install
 
-1. Clone source từ repo của [**mpv**](https://github.com/mpv-player/mpv.git)
+### 1. Clone source từ repo của [**mpv**](https://github.com/mpv-player/mpv.git)
 
 ```sh
 git clone https://github.com/mpv-player/mpv
@@ -23,29 +23,29 @@ git clean --force -d -x
 git pull origin master
 ```
 
-2. Cài đặt **Molten-vk**
+### 2. Cài đặt **Molten-vk**
 
 ```sh
 brew install molten-vk
 ```
 
-3. Cài đặt các dependencies cần thiết từ brew cho mpv
+### 3. Cài đặt các dependencies cần thiết từ brew cho mpv
 
 ```sh
 brew install --build-from-source --only-dependencies mpv && brew install libplacebo
 ```
 
-4. Tải file [**build-mpv_silicon.sh**](https://github.com/tranthanhxhong/mpv-arm/blob/main/build-mpv_silicon.sh) và đặt vào folder mpv đã clone trước đó
+### 4. Tải file [**build-mpv_silicon.sh**](https://github.com/tranthanhxhong/mpv-arm/blob/main/build-mpv_silicon.sh) và đặt vào folder mpv đã clone trước đó
 
 - [**build-mpv_silicon.sh**](https://github.com/tranthanhxhong/mpv-arm/blob/main/build-mpv_silicon.sh)
 
-5. Cài đặt **dylibbundler**
+### 5. Cài đặt **dylibbundler**
 
 ```sh
 brew install dylibbundler
 ```
 
-6. Chạy file **build-mpv_silicon.sh**
+### 6. Chạy file **build-mpv_silicon.sh**
 
 ```sh
 cd mpv
@@ -56,7 +56,7 @@ cd mpv
 ./build-mpv_silicon.sh --bundle
 ```
 
-7. Copy **mpv.app** trong thư mục **./mpv/build/** vào **/Applications**.
+### 7. Copy **mpv.app** trong thư mục **./mpv/build/** vào **/Applications**.
 
 ## Optional
 
